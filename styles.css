@@ -1,0 +1,162 @@
+/* Typography */
+body {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Layout */
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+/* Colors */
+a {
+    color: #0645AD;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.site-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.site-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.site-title a:hover {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 1.5rem;
+}
+
+/* Main content */
+main {
+    padding: 2rem 0;
+}
+
+.intro,
+.about,
+.essays,
+.other-writings,
+.newsletter-signup {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+article {
+    margin-bottom: 3rem;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem 0;
+    border-top: 1px solid #ddd;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.content {
+    max-width: 35em;
+    text-align: left;
+}
+
+/* Menu Button */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/* Menu toggle button */
+.menu-toggle {
+    margin-top: 0.8rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+
+/* Responsive Navigation Menu */
+.nav-menu {
+    transition: max-height 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    nav ul {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    header {
+        padding: 1.5rem 0;
+        padding-bottom: 0rem;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+.about-image {
+    width: 110px;
+    height: auto;
+    float: left;
+    margin: 0 1rem 0.2rem 0;
+    padding-top: 6px;
+}
+
+.featured-essay {
+    font-weight: normal;
+    font-family: 'Georgia', serif;
+}
