@@ -2,13 +2,8 @@ backend:
   name: github
   repo: iywey/iywey.github.io
   branch: main
-  auth_endpoint: https://iywey.github.io/admin
-  base_url: https://iywey.github.io
-  auth:
-    client_id: Ov23liwXbccfjDOC48gD
-    client_secret: f04bd96f36f2060593749c6ef0ceec775df4114f
 
-media_folder: "assets/images/uploads" # Where images will be stored
+media_folder: "assets/images/uploads"
 public_folder: "/assets/images/uploads"
 
 collections:
