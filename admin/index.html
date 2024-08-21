@@ -3,13 +3,20 @@
 <head>
   <title>Content Manager</title>
   <!-- Link to the Netlify CMS (Static CMS) JavaScript bundle -->
-  <script src="https://unpkg.com/netlify-cms@2.10.0/dist/netlify-cms.js"></script>
+  <script src=https://cdn.jsdelivr.net/npm/netlify-cms@2.10.192/dist/netlify-cms.min.js></script>
 </head>
 <body>
+  <h1>CMS Loading...</h1>
   <script>
-    CMS.init({
-      config: 'config.yml'
-    });
+    if (typeof CMS !== 'undefined') {
+      console.log("Initializing CMS...");
+      CMS.init({
+        config: '/admin/config.yml'
+      });
+      console.log("CMS Initialization Complete");
+    } else {
+      console.error("CMS is not defined. The script might not be loading correctly.");
+    }
   </script>
 </body>
 </html>
